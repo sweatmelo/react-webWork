@@ -31,7 +31,7 @@ class LoginPage extends React.Component {
          const eValid = !this.email.current.validity.typeMismatch && 
                           !this.email.current.validity.valueMissing;
          //Is the password field valid?
-         const pValid = !this.password.current.validity.patternMismatch && s
+         const pValid = !this.password.current.validity.patternMismatch && 
                             !this.password.current.validity.valueMissing;
                             console.log(eValid.pValid)
         if (eValid && pValid) {

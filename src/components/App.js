@@ -40,7 +40,7 @@ class App extends React.Component {
       <>
         <NavBar mode={this.state.mode}
                 menuOpen={this.state.menuOpen}
-                toggleMenuOpen={this.state.toggleMenuOpen}
+                toggleMenuOpen={this.toggleMenuOpen}
                 modalOpen={this.state.modalOpen}
                 toggleModalOpen={this.toggleModalOpen}
                 userId={this.state.userId}
@@ -50,6 +50,8 @@ class App extends React.Component {
                   setMode={this.setMode} 
                   menuOpen={this.state.menuOpen}
                   modalOpen={this.state.modalOpen}/> 
+        <SideMenu 
+        menuOpen={this.state.menuOpen}/>
         {
           {LoginMode:
             <LoginPage setMode={this.setMode}
